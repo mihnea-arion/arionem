@@ -1,0 +1,421 @@
+/* Our App */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* other CSS rules */
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, serif; */
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 2.0;
+    color:white;
+    background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Playfair Display', sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+
+h1 { font-size: 36px; } 
+h2 { font-size: 30px; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #000000;
+}
+
+.intro-container{
+    color: #ffffff;
+    line-height: 2.5;
+    margin-bottom: -25px;
+    justify-content: space-between;
+}
+
+.about-container{
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+    justify-content: space-between;
+}
+
+.owner-container{
+    color: #ffffff;
+    line-height: 2.5;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.main-buttons-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 75px;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    margin-bottom: 0px;
+}
+
+.intro{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.language-container{
+    margin-top: -100px;
+    margin-left: 1000px;
+}
+
+.owner-name{
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.owner-title{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.main-text{
+/*    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    /*wtext-align: justify;
+    wjustify-content: space-between;*/
+}
+
+
+.poem-center{
+    /*font-size: 12px;*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    font-style: italic;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signature{
+    text-align: right;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 40px; /* Adds spacing between image and text */
+}
+
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;  /* Ensures all items have the same aspect ratio */
+    overflow: hidden;     /* Hides excess content */
+    border-radius: 50px;   /* Applies to the container for neatness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* Crops and fits images perfectly */
+}
+
+.gallery-item h3, .gallery-item .description {
+    visibility: visible; /* Ensure it’s visible */
+    opacity: 1; 
+    
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 5px;
+    display: none;
+}
+
+.gallery-container .under_description {
+    text-align: center;
+    text-align: justify;
+    font-size: 20px;
+    color: white; /* Ensure visibility on dark backgrounds */
+    padding: 10px;
+    max-width: 100%; /* Keeps text from stretching too wide */
+    background: rgba(0, 0, 0, 0.5); /* Optional contrast */
+    border-radius: 10px; /* Softer look */
+}
+
+
+.gallery-item:hover h3, .gallery-item:hover .description {
+    display: block;
+}
+
+.gallery-item .description {
+    bottom: 100px; /* Give a little more space between title and description */
+    font-size: 14px; /* Or adjust the size if needed */
+}
+
+.buttons-list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.button {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+  }
+
+  .button:hover {
+    background-color: #8b0c0c; /* Green */
+    color: white;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.index-title{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.author{
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.asterisk{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+/* Main content Styles */
+.main-content-container{
+    background-color: #000000;
+    padding-left: 0px;
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 180px;
+}
+
+.main-content-text{
+    font-size: 24px;
+    background-color: #000000;
+    padding-left: 150px;
+    padding-top: 25px;
+    padding-right: 150px;
+    padding-bottom: 180px;
+}
+
+.trad-section-container{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.povestiri-section{
+    margin-top: 40px;
+}
+
+.povestiri-header{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.povestiri-gallery {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+.teatru-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    max-width: 600px; /* Or whatever width keeps it visually appealing */
+    margin: 0 auto;    /* Center the container */
+}
+
+.fragmente-gallery {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 70px;
+}
+
+.povestiri-gallery-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 3;  /* Ensures all items have the same aspect ratio */
+    overflow: visible;     /* Hides excess content */
+    border-radius: 10px;   /* Applies to the container for neatness */
+}
+
+.povestiri-gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+
+.povestiri-gallery-item h3, .povestiri-gallery-item .description {
+    position: static;
+    display: block;
+    background-color: transparent; 
+    color:rgb(255, 255, 255);
+    margin: 8px 0 0; /* Add spacing between the image and title */
+    padding: 0; /* Reset padding if needed */
+    z-index: 2;
+}
+
+.povestiri-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* Crops and fits images perfectly */
+    position: relative;
+    z-index: 1;
+}
+
+.povestiri-list{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.povestire-name{
+    color: #ffffff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; /* 171.429% */
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration-line: none;
+}
+
+.project-info{
+    font-weight: 400;
+}
