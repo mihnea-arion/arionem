@@ -71,10 +71,78 @@ h6 { font-size: 16px; }
 .main-buttons-container{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
     margin-top: -30px;
     margin-bottom: 75px;
+}
+
+.main-buttons-container a {
+    white-space: nowrap; /* Prevents text from breaking into two lines */
+}
+
+.hamburger-menu {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.hamburger-icon {
+    display: none; /* Hidden on large screens */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 1100px) {
+    .main-buttons-container {
+        display: flex; /* Hide buttons on small screens */
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    /* Hide ALL buttons by default */
+    .buttons-list a {
+        display: none;
+    }
+
+    /* Ensure the owner-container remains */
+    .owner-container {
+        display: block !important;
+        transform: scale(0.85);
+    }
+
+     /* Show the hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block; /* Show ☰ icon */
+    }
+
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .menu-links a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .menu-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
 }
 
 p{

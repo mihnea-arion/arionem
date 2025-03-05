@@ -38,6 +38,17 @@
 
         </div>
 
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+            <div class="menu-links">
+                <a href="index.html">CARTE DE VIZITĂ</a>
+                <a href="fragmente.html">FRAGMENTE</a>
+                <a href="proza-scurta.html">PROZĂ SCURTĂ</a>
+                <a href="teatru.html">TEATRU</a>
+                <a href="traduceri.html">TRADUCERI</a>
+            </div>
+        </div>
+
     <div class="main-content-text">
         <div class="intro">
             <h1 class="story-title">Ex Oriente Lux</h1>
@@ -120,7 +131,7 @@
             <p>Așadar, umblam cât era ziua de lungă și împușcam câini pe stradă. Nu conta dimensiunea, nu conta nimic. Mari, mici, ciungi, schilozi, urâți, frumoși, de rasă, corcituri – pe toți i-am ras. </p>
             <p>Măcar cu atât au rămas Bucureștii de la nemți.</p>
             <p>La început mă simțeam prost. La fel și Hans. Cred că l-am văzut lăcrimând când a împușcat primul animal. Oare și pe front se punea pe bocit când împușca oameni?</p>
-            <p>În fine, am fost motivați foarte frumos de către superiorul lui Hans. Era un domn foarte convingător. Nu știu exact ce i-a zis. În orice caz, a lătrat la el în asemenea hal, că pentru o clipă am crezut că s-a transformat și el în dulău. După ce l-a muștruluit cum se cuvine, după ce i-a explicat că era vorba de un Befehl, mi-a aruncat și mie o privire scurtă. Eram doar o dâră de rahat pe cizma lui. Cu mine nu era cazul să discute. Când ne-am îndepărtat, Hans mi-a dat de înțeles ce bănuiam deja. </p>
+            <p>În fine, am fost motivați foarte frumos de către superiorul lui Hans. Era un domn foarte convingător. Nu știu exact ce i-a zis. În orice caz, a lătrat la el în asemenea hal, că pentru o clipă am crezut că s-a transformat și el în dulău. După ce l-a muștruluit cum se cuvine, după ce i-a explicat că era vorba de un <i>Befehl</i>, mi-a aruncat și mie o privire scurtă. Eram doar o dâră de rahat pe cizma lui. Cu mine nu era cazul să discute. Când ne-am îndepărtat, Hans mi-a dat de înțeles ce bănuiam deja. </p>
             <p>Domnul ofițer era prusac.</p>
             
             <br>
@@ -135,5 +146,16 @@
     </div>
     
     </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".menu-links");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

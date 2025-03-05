@@ -38,6 +38,17 @@
         </buttons_list>
       </div>
 
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-links">
+            <a href="index.html">CARTE DE VIZITĂ</a>
+            <a href="fragmente.html">FRAGMENTE</a>
+            <a href="proza-scurta.html">PROZĂ SCURTĂ</a>
+            <a href="teatru.html">TEATRU</a>
+            <a href="traduceri.html">TRADUCERI</a>
+        </div>
+    </div>
+
       <div class="intro-container">
         <h1 class="index-title">Proză scurtă</h1>
       </div>
@@ -284,5 +295,16 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function toggleMenu() {
+          var menu = document.querySelector(".menu-links");
+          if (menu.style.display === "block") {
+              menu.style.display = "none";
+          } else {
+              menu.style.display = "block";
+          }
+      }
+  </script>
   </body>
 </html>
