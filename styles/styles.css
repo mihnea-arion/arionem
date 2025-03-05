@@ -5,11 +5,17 @@
 body {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, serif; */
+   
     font-family: 'Merriweather', serif;
     font-size: 18px;
     line-height: 2.0;
     color:white;
     background-color: #000000;
+
+    max-width: 100vw;  /* Ensures the page never exceeds screen width */
+    overflow-x: hidden; /* Completely disables horizontal scrolling */
+    margin: 0;          /* Removes any accidental margin causing issues */
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,8 +36,9 @@ h6 { font-size: 16px; }
 .app-wrapper{
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin: 0px auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #000000;
 }
 
@@ -312,6 +319,7 @@ p{
     padding-top: 25px;
     padding-right: 0px;
     padding-bottom: 180px;
+    width: 100%;
 }
 
 .main-content-text{
