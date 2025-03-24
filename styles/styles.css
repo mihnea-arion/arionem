@@ -392,10 +392,15 @@ p{
 .main-content-text{
     font-size: 24px;
     background-color: #000000;
-    padding-left: 150px;
     padding-top: 25px;
-    padding-right: 150px;
     padding-bottom: 180px;
+
+
+    text-align: center;
+    line-height: 2.5;
+    margin: 0 auto 100px;
+    max-width: 1000px;       /* 🔥 This controls line length */
+    padding: 0 20px;         /* Optional: adds breathing room on phones */
 }
 
 .trad-section-container{
