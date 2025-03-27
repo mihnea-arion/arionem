@@ -576,3 +576,26 @@ p{
 .project-info{
     font-weight: 400;
 }
+
+.site-footer {
+    background-color: #333333; /* Dark gray — adjust as you like */
+    color: #cccccc ;            /* Soft gray text for readability */
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    margin-top: 100px;         /* Adds breathing space above the footer */
+  }
+
+  .back-to-top {
+    display: block;
+    margin-top: 15px;
+    color: #cccccc;
+    font-size: 0.85em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    color: #ffffff;
+  }
+  
