@@ -6,11 +6,12 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, serif; */
    
-    font-family: 'Merriweather', serif;
+    font-family: 'Spectral', serif;
     font-size: 18px;
+    font-weight: 400;
     line-height: 2.0;
-    color:white;
-    background-color: #000000;
+    color:#FAF6F0;
+    background-color: #181b1d;
 
     max-width: 100vw;  /* Ensures the page never exceeds screen width */
     overflow-x: hidden; /* Completely disables horizontal scrolling */
@@ -20,12 +21,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Playfair Display', sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: white;
+    font-family: 'Work Sans', sans-serif;
+    color: #FAF6F0;
 }
 
 
-h1 { font-size: 36px; } 
+h1 { font-size: 50px; } 
 h2 { font-size: 30px; }
 h3 { font-size: 22px; }
 h4 { font-size: 20px; }
@@ -39,18 +40,19 @@ h6 { font-size: 16px; }
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #000000;
+    background-color: #181b1d;
 }
 
 .intro-container{
-    color: #ffffff;
+    color: #FAF6F0;
     line-height: 2.5;
     margin-bottom: -25px;
     justify-content: space-between;
 }
 
 .about-container{
-    color: #ffffff;
+    font-size: 20px;
+    color: #FAF6F0;
     text-align: center;
     line-height: 2.5;
     margin-bottom: 100px;
@@ -61,7 +63,7 @@ h6 { font-size: 16px; }
 }
 
 .owner-container{
-    color: #ffffff;
+    color: #FAF6F0;
     line-height: 2.5;
     margin-top: 30px;
     margin-right: auto;
@@ -124,41 +126,57 @@ h6 { font-size: 16px; }
     }
 
     .menu-links {
+        font-family: 'Work Sans', sans-serif;
         display: none;
         position: absolute;
         top: 50px;
         right: 20px;
-        background: rgba(0, 0, 0, 0.9);
+
+        background-color: rgba(0, 0, 0, 0.85); /* sweet spot */
+        border-radius: 8px;
         padding: 10px;
-        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(131, 124, 124, 0.452);
+        border: 1px solid rgba(255, 255, 255, 0.678);
+
         text-align: right;
     }
 
     .menu-links a {
         display: block;
-        color: white;
+        color: #FAF6F0;
         text-decoration: none;
-        padding: 10px 15px;
+        padding: 12px 20px;
+        box-shadow: 0 4px 10px rgba(129, 122, 122, 0.726);
+        text-align: center;
+        transition: background 0.3s, color 0.3s;
+        
     }
 
+    .menu-links a:last-child {
+        border-bottom: none; /* don’t add a line after the last one */
+      }
+
     .menu-links a:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.342);
+        color: #FAF6F0;
     }
 }
 
 p{
-    font-family: 'Merriweather', serif;
+    font-family: 'Spectral', serif;
     margin-top: 0;
-    line-height: 2;
+    line-height: 1.8em;
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 50px;
-    margin-bottom: 0px;
+    text-indent: 0px; /* era 50, ca idee */
+    margin-bottom: 1.2em;
 }
 
 .intro{
     text-align: center;
     justify-content: space-between;
+    display: flex;
+  flex-direction: column;
 }
 
 .language-container{
@@ -169,13 +187,13 @@ p{
 .owner-name{
     font-style: normal;
     font-weight: 700;
-    color: #ffffff;
+    color: #FAF6F0;
     text-decoration: none;
 
 }
 
 .owner-title{
-    color: rgb(255, 255, 255);
+    color: #FAF6F0;
     background-color: transparent;
     text-decoration: none;
 
@@ -231,7 +249,7 @@ p{
     aspect-ratio: 2 / 3;  /* Ensures all items have the same aspect ratio */
     overflow: hidden;     /* Hides excess content */
     border-radius: 50px;   /* Applies to the container for neatness */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px #181b1d33; /* Subtle shadow */
 }
 
 .gallery-item img:hover {
@@ -255,8 +273,8 @@ p{
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
+    background-color: #181b1dB3; /* Semi-transparent background */
+    color: #FAF6F0;
     padding: 5px;
     display: none;
 }
@@ -265,10 +283,10 @@ p{
     text-align: center;
     text-align: justify;
     font-size: 20px;
-    color: white; /* Ensure visibility on dark backgrounds */
+    color: #FAF6F0; /* Ensure visibility on dark backgrounds */
     padding: 10px;
     max-width: 100%; /* Keeps text from stretching too wide */
-    background: rgba(0, 0, 0, 0.5); /* Optional contrast */
+    background: #181b1d80; /* Optional contrast */
     border-radius: 10px; /* Softer look */
 }
 
@@ -291,28 +309,31 @@ p{
 }
 
 .button {
-    background-color: #ffffff; /* Green */
-    border: none;
-    color: rgb(0, 0, 0);
-    border-radius: 18px;
-    padding: 10px 22px;
+    /* background-color:rgba(17, 14, 14, 0.85); */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #FAF6F0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(131, 124, 124, 0.452);
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.4s;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 22px;
   }
 
   .button:hover {
-    background-color: #8b0c0c; /* Green */
-    color: white;
+    background-color: rgba(255, 255, 255, 0.342);
+    box-shadow: 0 4px 10px rgba(129, 122, 122, 0.726);
+    color: #181b1d;
   }
 
   /* Dropdown Button */
 .dropbtn {
     background-color: #04AA6D;
-    color: white;
+    color: #FAF6F0;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -328,15 +349,15 @@ p{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #181b1d;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #181b1d33;
     z-index: 1;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: rgb(255, 255, 255);
+    color: #FAF6F0;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -352,7 +373,7 @@ p{
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .index-title{
-    font-size: 70px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -364,6 +385,7 @@ p{
 .author{
     font-size: 20px;
     text-align: right;
+    margin-top: -30px;
     margin-bottom: 100px;
 }
 
@@ -381,7 +403,8 @@ p{
 
 /* Main content Styles */
 .main-content-container{
-    background-color: #000000;
+    font-size: 20px;
+    background-color: #181b1d;
     padding-left: 0px;
     padding-top: 25px;
     padding-right: 0px;
@@ -391,7 +414,7 @@ p{
 
 .main-content-text{
     font-size: 24px;
-    background-color: #000000;
+    background-color: #181b1d;
     padding-top: 25px;
     padding-bottom: 180px;
 
@@ -515,7 +538,62 @@ p{
     z-index: 1; */
 }
 
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+.title-button{
+    /* display: inline-block; */
+    min-height: 3.4em; /* Enough for 2 lines at 1.4 line-height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+    background-color: #f0b27a;
+    color: #181b1d;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+ 
+}
+
+/* .title-button:hover{
+    background-color: #e58e26;
+} */
+
+.read-more-button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #f0ecec;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .read-more-button:hover {
+    background-color: #f0ececd5;
+    color: #181b1d;
+  }
+  
+
 .povestiri-gallery-item {
+    display: grid;
     position: relative;
     width: 100%;
     aspect-ratio: 3 / 3;  /* Ensures all items have the same aspect ratio */
@@ -529,11 +607,21 @@ p{
 }
 
 
-.povestiri-gallery-item h3, .povestiri-gallery-item .description {
+.povestiri-gallery-item .description {
     position: static;
     display: block;
     background-color: transparent; 
-    color:rgb(255, 255, 255);
+    color:#FAF6F0;
+    margin: 8px 0 0; /* Add spacing between the image and title */
+    padding: 0; /* Reset padding if needed */
+    z-index: 2;
+}
+
+.povestiri-gallery-item h3{
+    position: static;
+    display: block;
+    background-color: transparent; 
+    color:#242321;
     margin: 8px 0 0; /* Add spacing between the image and title */
     padding: 0; /* Reset padding if needed */
     z-index: 2;
@@ -563,7 +651,7 @@ p{
 }
 
 .povestire-name{
-    color: #ffffff;
+    color: #FAF6F0;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -582,7 +670,7 @@ p{
     color: #cccccc ;            /* Soft gray text for readability */
     text-align: center;
     padding: 30px 20px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     margin-top: 100px;         /* Adds breathing space above the footer */
   }
 
@@ -590,12 +678,28 @@ p{
     display: block;
     margin-top: 15px;
     color: #cccccc;
-    font-size: 0.85em;
+    font-size: 1em;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .back-to-top:hover {
-    color: #ffffff;
+    color: #FAF6F0;
+  }
+  
+  #reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 0%;
+    background-color: #f0ecec; /* Your soft white tone */
+    /* background: linear-gradient(to right, #f0ecec, #e4a538); */
+    background: linear-gradient(to right, #f0ecec, #e58e26);
+
+
+    box-shadow: 0 1px 3px rgba(99, 88, 88, 0.486);
+    z-index: 1000;
+    transition: width 0.2s ease-out;
   }
   

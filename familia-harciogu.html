@@ -1,200 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mihnea Arion - Familia Hârciogu</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="reading-progress"></div>
+
     <div class="app-wrapper">
-
-        <div class="main-buttons-container">
-
-            <div class="owner-container">
-                <a href="index.html" class="owner-name"><h1 class="owner-title">MIHNEA ARION</h1></a>
-            </div>
-
-            <buttons_list class="buttons-list">
-
-                <a href="fragmente.html" class="povestire-name">
-                    <button1 class="button">FRAGMENTE</button1>
-                </a>
-                <a href="proza-scurta.html" class="povestire-name">
-                    <button1 class="button">PROZĂ SCURTĂ</button1>
-                </a>
-                <a href="teatru.html" class="povestire-name">
-                    <button1 class="button">TEATRU</button1>
-                </a>
-                <a href="traduceri.html" class="povestire-name">
-                    <button1 class="button">TRADUCERI</button1>
-                </a> 
-
-            </buttons_list>
-
+      <div class="main-buttons-container">
+        <div class="owner-container">
+          <a href="index.html" class="owner-name"
+            ><h1 class="owner-title">MIHNEA ARION</h1></a
+          >
         </div>
 
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
-            <div class="menu-links">
-                <a href="index.html">CARTE DE VIZITĂ</a>
-                <a href="fragmente.html">FRAGMENTE</a>
-                <a href="proza-scurta.html">PROZĂ SCURTĂ</a>
-                <a href="teatru.html">TEATRU</a>
-                <a href="traduceri.html">TRADUCERI</a>
-            </div>
-        </div>
+        <buttons_list class="buttons-list">
+          <a href="fragmente.html" class="povestire-name">
+            <button1 class="button">FRAGMENTE</button1>
+          </a>
+          <a href="proza-scurta.html" class="povestire-name">
+            <button1 class="button">PROZĂ SCURTĂ</button1>
+          </a>
+          <a href="teatru.html" class="povestire-name">
+            <button1 class="button">TEATRU</button1>
+          </a>
+          <a href="traduceri.html" class="povestire-name">
+            <button1 class="button">TRADUCERI</button1>
+          </a>
+        </buttons_list>
+      </div>
 
-    <div class="main-content-text">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-links">
+          <a href="index.html">CARTE DE VIZITĂ</a>
+          <a href="fragmente.html">FRAGMENTE</a>
+          <a href="proza-scurta.html">PROZĂ SCURTĂ</a>
+          <a href="teatru.html">TEATRU</a>
+          <a href="traduceri.html">TRADUCERI</a>
+        </div>
+      </div>
+
+      <div class="main-content-text">
         <div class="intro">
-            <h1 class="story-title">Familia Hârciogu</h1>
-            <h2 class="author">Piesă de Mihnea Arion</h2>
+          <h1 class="story-title">Familia Hârciogu</h1>
+          <h2 class="author">Piesă de Mihnea Arion</h2>
         </div>
-            
+
         <main_text class="main-text">
-
-            <p style="text-align: left;"><b>PERSONAJE</b></p>
-            <p>	<b>Domnul Hârciogu</b>, în etate cam de vreo 40 de ani (își arată vârsta)</p>
-            <p>	<b>Doamna Hârciogu</b>, cu doar câțiva ani mai tânără (nici ea nu se prezintă grozav)</p>
-            <br>
-            <p style="text-align: center;"><b>Scena I</b></p>
-            <br>
-            <p><i>O cameră de zi mare, mai mult decât încăpătoare pentru chiar și cele mai exigente cerințe dacă spațiul n-ar fi utilizat atât de păgubos. Nenumărate colecții, care mai de care mai variate, însă toate în dezordine, umplu pereții, rafturile și podeaua. Cărți vechi și noi, tablouri de toate felurile, statuete din ceramică, lemn și fildeș sunt răspândite printre o sumedenie de magneți de frigider, monezi fără valoare, felicitări vechi de zeci de ani, răvașe din fursecuri, hârtii cu liste de cumpărături, pietricele mai mici sau mai mari, scoici, frunze presate, șervețele curate și murdare, bețișoare parfumate arse doar parțial sau deloc, eternele suveniruri de prost-gust care se găsesc în orice loc unde apar turiști și câte și mai câte astfel de lucruri. Obiecte cu oarecare valoare sunt înconjurate sau chiar înghițite de unele uzate sau de-a dreptul stricate, iar întregul talmeș-balmeș e supravegheat îndeaproape de doamna Hârciogu, în halat de casă. Aceasta deschide o vitrină, ridică una dintre farfuriile ciobite, o șterge cu un șervet de bucătărie, o mângâie și o privește cu drag, apoi o sărută cu zgomot. Fără să observe, a agățat cu fusta un umeraș care se ițește dintr-o grămăjoară de pe jos.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Frumoasa lu’ mama! Au vrut să te arunce tocmai pe tine, care ești din setul de veselă pe care-l am de la mama-soacră din prima căsătorie!</p>
-            <br>
-            <p><i>Femeia se uită mai departe la farfurie, tot mai captivată, când deodată ceva de pe suprafața ei îi atrage atenția. O apropie și ochii iscoditori îi devin ba înspăimântați, ba mânioși.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Dar ce-o fi asta? O fi pus cineva mâna pe ea?</p>
-            <br>
-            <p><i>Un zgomot venit de la ușa de la intrare o face să tresară. Umerașul se mișcă și el, dar încă e bine ancorat. Se vede pe chipul femeii că sunetul nu prevestește nimic bun.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Sper că n-a mai adus încă ceva...</p>
-            <br>
-            <p><i>Ușa se dă de perete, iar în cameră pătrunde domnul Hârciogu. E destul de bondoc și e îmbrăcat cu niște haine care-i vin puțin cam lălâi, iar în mâini își ține servieta și pălăria demodată. Nu poartă barbă, are o chelie destul de pronunțată și e roșu la față, semn că e cuprins de o agitație nervoasă. Înainte să se întoarcă spre el, consoarta lui își dă părul pe spate și arborează un zâmbet fals, dar nu se sinchisește să-i iasă propriu-zis în întâmpinare, mulțumindu-se cu o întrebare prozaică.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Ce faci, dragă? Cum ți-a fost la muncă?</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Excelent, excelent, dar nu mai pot de... Ia stai puțin, de ce ai deschis vitrina aceea?</p>
-            <br>
-            <p><i>Soția îl privește perplexă. În același timp, așază farfuria la loc cât mai discret posibil. Se simte cu musca pe căciulă și vrea să evite o ceartă.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> De ce am deschis vitrina? Cum de ce, dragă? Doar ca să șterg praful!</p>
-            <br>
-            <p><i>Răspunsul pare să-l mulțumească pe domnul Hârciogu, care se liniștește treptat.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> A, da? Foarte bine, foarte bine...</p>
-            <br>
-            <p><i>Domnul Hârciogu își pune pălăria și servieta pe un fotoliu și începe să-și scoată haina.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Dar tu ce crezi că faci?!</p>
-            <br>
-            <p><i>Doamna Hârciogu e scandalizată. Se face roșie la față și dă să pornească spre soțul ei, însă umerașul de pe jos încearcă să se opună pornirii ei belicoase, rezultatul fiind că de sub mormanul de obiecte care se prăbușește cu zgomot țâșnește un încălțător care se agățase cumva de el. Amândoi rămân ca trăzniți. Domnul Hârciogu își revine primul din surpriză și profită de ocazie.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Vai, de când îl căutam! Îți mulțumesc nespus, draga mea!</p>
-            <br>
-            <p><i>Domnul Hârciogu ia inițiativa nu doar verbal, ci și acționează, căci se mișcă mai iute decât ne-am aștepta de la cineva de talia lui, înșfacă încălțătorul, după care se face nevăzut. Continuă să vorbească de după ușă.</i></p>
-            <br>
-            <p><b>DOMNUL HÂRCIOGU:</b> Ăsta e încălțătorul pe care-l folosea și bunicul. Mi se pare că l-a cumpărat prin ’23 de la Hermann, un negustor faimos prin târg, și apoi l-a...</p>
-            <br>
-            <p><i>În mod evident, doamna Hârciogu nu e impresionată de pedigriul obiectului utilitar.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Da? Mă bucur că ți-a fost bine la muncă. Apropo, sper că de data asta n-ai mai adus nimic de la șeful tău.</p>
-            <br>
-            <p><i>În timp ce ea vorbește, domnul Hârciogu pătrunde iarăși în încăpere. Auzind-o, face o grimasă și încearcă să dosească un pachețel, dar abia reușește. E clar că vrea să evite la rândul său un scandal domestic, așa că își supralicitează aparenta nevinovăție.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Dar cum să crezi așa ceva, draga mea? Păi se poate?</p>
-            <br>
-            <p><i>Consoarta îl privește cu ochi critic, apoi se împurpurează din nou la chip. Își îndreaptă degetul arărător de la mâna stângă spre fotoliul pe care se odihnesc servieta și pălăria. Se vede că e furibundă, iar tăcerea ei e cu atât mai amenințătoare. În schimb, domnul Hârciogu pare preocupat de succesul pe care-l are pitindu-și pachețelul, așa încât uită de posibilitatea altor pericole. Într-un târziu, presiunea crește într-atât, încât doamna Hârciogu cedează și pornește asaltul sonic la volum maxim, făcându-l pe soțul ei să-și închidă ochii și să înghită în sec.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> De câte ori să-ți spun ce anume vine unde? Parcă e prima oară când vii în casa asta!</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Țin să-ți aduc aminte că această casă am cumpărat-o eu însumi pe numele meu și că...</p>
-            <br>
-            <p><i>Îndrăzneala domnului Hârciogu dispare la fel de repede cum și-a făcut apariția, căci soția străbate imediat distanța care-i desparte și continuă să strige.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Te-am întrebat eu pe numele cui e casa? Un singur lucru vreau de la tine: ordine! Mă înțelegi? OR-DI-NE! Spune-mi și mie, de ce simți nevoia să-ți bați joc de toată munca mea așezându-ți servieta și pălăria pe fotoliu?</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Dar, draga mea, voiam doar să...</p>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Nu mă mai întrerupe când îți vorbesc! M-am săturat de casa asta și de toate hachițele tale! Uită-te și tu! Intri încălțat și îți trântești servieta pe fotoliu. Probabil că urma să-ți arunci și haina pe spătar. Te pomenești că nici pe mâini nu te-ai spălat până acum! Spune sincer, ai dat mâna cu colegii tăi când ai plecat de la muncă? Ai habar câți germeni ai schimbat cu ei printr-un simplu salut? Dar la copiii noștri nu te gândești? Trebuie să înțelegi odată pentru totdeauna că nu putem să mai continuăm așa. În casa asta trebuie să domnească ordinea, altfel...</p>
-            <br>
-            <p><i>Între cei doi se lasă o tăcere mormântală. De afară se aud claxoane și alte zgomote aferente traficului de la ore de vârf. Domnul Hârciogu se vede nevoit s-o ajute pe consoartă să-și termine tirada, căci deodată aceasta pare să nu se mai poată desprinde din contemplarea unuia dintre pereți.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Altfel...?</p>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Altfel...</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Draga mea, te rog să mă ierți dacă te-am necăjit. Uite, chiar acum le iau de pe fotoliu. Țin să-ți comunic că nu am dat mâna cu colegii de muncă. Le-am explicat interdicția ta și au fost cu toții de acord că ar fi mai bine să nu ne mai salutăm, să nu ne mai vizităm și în general să evităm interacțiunile de orice natură dacă există pericole atât de mari.</p>
-            <br>
-            <p><i>Domnul Hârciogu zâmbește și face întocmai cum a spus. Ridică servieta și pălăria, dar în același timp manevrează cu dibăcie pachețelul, așa încât soția lui să nu-l vadă. În tot acest timp, doamna Hârciogu nu-și dezlipește privirea de la perete.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Lasă asta... Spune-mi mai bine altceva. Pata aia de acolo... O vezi?</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> O văd...</p>
-            <br>
-            <p><i>Domnul Hârciogu pare contrariat, așa că oferă doar un răspuns vag.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> O vezi?</p>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> O văd...?</p>
-            <br>
-            <p><i>Domnul Hârciogu devine tot mai nesigur ce vrea consoarta să audă.</i></p>
-            <br>
-            <p><b>DOAMNA HÂRCIOGU:</b> O vezi!</p>
-            <p><b>DOMNUL HÂRCIOGU:</b> O văd!</p>
-            <br>
-            <p><i>După ce-i răspunde cu aplomb, o privește cu atenție și începe să meargă tiptil până la vitrină. Între timp, Doamna Hârciogu își continuă veghea nemișcată. Odată ce soțul ei ajunge la vitrină, o privește cu mare atenție, oftează, scoate un șervețel și începe să curețe urmele lăsate de soția lui. În același timp, și ea pornește către pata punctiformă de pe perete. A studiat-o îndelung de la distanță, așa încât acum ar vrea s-o vadă și din apropiere. Odată ce face acest lucru, dă din cap nemulțumită și iese din încăpere. Domnul Hârciogu profită de acest moment de respiro ca să-și spună oful.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Auzi tu! Vrea ordine și nici ea nu e în stare s-o păstreze!</p>
-            <br>
-            <p><i>Domnul Hârciogu se oprește din operațiunea de curățare, după care dispare la rândul lui din încăpere. De după ușă îl auzim cum continuă.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Așa-mi trebuie, dacă nu l-am ascultat pe ăl’ bătrân! Doar mi-a zis să iau o femeie ordonată, care știe să aibă grijă de gospodărie. „Cum îi e mintea, așa-i e și sufletul.” Da, mare dreptate avea!</p>
-            <br>
-            <p><i>Își face din nou apariția cu încălțătorul achiziționat de bunicul lui în 1923, se așază în genunchi lângă grămăjoara de unde obiectul a țâșnit alături de umeraș și îl așază cu venerație la loc, având grijă ca totul să fie ca mai înainte.</i></p>
-            <br>
-            <p>	<b>DOMNUL HÂRCIOGU:</b> Dar ce să-i faci? Ai ei n-au învățat-o să aibă grijă de lucruri așa cum se cuvine și cu asta, basta!</p>
-            <br>
-            <p><i>Nici nu a terminat bine operațiunea laborioasă, că se și apucă de alta. Scoate mai multe cărți și privește nemulțumit ordinea în care le-a găsit în raft, după care plasează pachețelul pe care-l tot ascundea de soția lui și așază volumele așa cum consideră că este de fapt corect.</i></p>
-            <br>
-            <p><b>DOMNUL HÂRCIOGU:</b> Iar asta vine... aici!</p>
-            <br>
-            <p><i>Se vede că este mândru nevoie mare de faptul că a eficientizat perfect spațiul disponibil, căci dă drumul unei exclamații scurte care exprimă un entuziasm copilăresc la care nu ne-am aștepta din partea lui. Imediat își face apariția soția sa, care se duce țintă la pata de pe perete. E înarmată cu un detergent spray și un burete. Domnul Hârciogu iese din încăpere cât mai discret posibil, nevrând să riște reluarea confilctului. În ciuda tuturor eforturilor ei, doamna Hârciogu nu reușește să elimine pata încăpățânată.</i></p>
-            <br>
-            <p><b>DOAMNA HÂRCIOGU:</b> Of, sunt sigură că săptămâna trecută nu era aici!</p>
-            <br>
-            <p><i>E de-a dreptul epuizată, așa că se duce la fotoliu și mai mult se trântește decât se așază. Nu stă nici două clipe, că sare ca arsă.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Mototolul ăsta iar și-a spus servieta pe fotoliu! Nimic nu știe să facă dacă nu-l împing eu de la spate! Avea dreptate mama când zicea să-mi caut un bărbat care e atent la detalii. „Cum rânduiește lucrurile, așa-i rânduit și el.” Da, chiar așa!</p>
-            <br>
-            <p><i>Doamna Hârciogu scoate alt spray dintr-un buzunar al halatului și începe să dezinfecteze fotoliul. Într-un târziu îl privește mulțumită de rezultat, după care se întoarce la vitrină, o deschide cu precauție și scoate iarăși farfuria.</i></p>
-            <br>
-            <p>	<b>DOAMNA HÂRCIOGU:</b> Frumoasa lu’ mama! Nu s-a prea priceput mama-soacră să-și crească fiul, dar la veselă avea gusturi a-ntâia!</p>
-            <br>
-            <p style="text-align: center;"><b>CORTINA</b></p>
-            <p>
-            
-            
-        </main_text>
-            
-
-
-        
-
-    </div>
-    
+          <p style="text-align: left"><b>PERSONAJE</b></p>
+          <p>
+            <b>Domnul Hârciogu</b>, în etate cam de vreo 40 de ani (își arată
+            vârsta)
+          </p>
+          <p>
+            <b>Doamna Hârciogu</b>, cu doar câțiva ani mai tânără (nici ea nu se
+            prezintă grozav)
+          </p>
+          <br />
+          <p style="text-align: center"><b>Scena I</b></p>
+          <br />
+          <p>
+            <i
+              >O cameră de zi mare, mai mult decât încăpătoare pentru chiar și
+              cele mai exigente cerințe dacă spațiul n-ar fi utilizat atât de
+              păgubos. Nenumărate colecții, care mai de care mai variate, însă
+              toate în dezordine, umplu pereții, rafturile și podeaua. Cărți
+              vechi și noi, tablouri de toate felurile, statuete din ceramică,
+              lemn și fildeș sunt răspândite printre o sumedenie de magneți de
+              frigider, monezi fără valoare, felicitări vechi de zeci de ani,
+              răvașe din fursecuri, hârtii cu liste de cumpărături, pietricele
+              mai mici sau mai mari, scoici, frunze presate, șervețele curate și
+              murdare, bețișoare parfumate arse doar parțial sau deloc, eternele
+              suveniruri de prost-gust care se găsesc în orice loc unde apar
+              turiști și câte și mai câte astfel de lucruri. Obiecte cu oarecare
+              valoare sunt înconjurate sau chiar înghițite de unele uzate sau
+              de-a dreptul stricate, iar întregul talmeș-balmeș e supravegheat
+              îndeaproape de doamna Hârciogu, în halat de casă. Aceasta deschide
+              o vitrină, ridică una dintre farfuriile ciobite, o șterge cu un
+              șervet de bucătărie, o mângâie și o privește cu drag, apoi o
+              sărută cu zgomot. Fără să observe, a agățat cu fusta un umeraș
+              care se ițește dintr-o grămăjoară de pe jos.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Frumoasa lu’ mama! Au vrut să te arunce
+            tocmai pe tine, care ești din setul de veselă pe care-l am de la
+            mama-soacră din prima căsătorie!
+          </p>
+          <br />
+          <p>
+            <i
+              >Femeia se uită mai departe la farfurie, tot mai captivată, când
+              deodată ceva de pe suprafața ei îi atrage atenția. O apropie și
+              ochii iscoditori îi devin ba înspăimântați, ba mânioși.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Dar ce-o fi asta? O fi pus cineva mâna pe
+            ea?
+          </p>
+          <br />
+          <p>
+            <i
+              >Un zgomot venit de la ușa de la intrare o face să tresară.
+              Umerașul se mișcă și el, dar încă e bine ancorat. Se vede pe
+              chipul femeii că sunetul nu prevestește nimic bun.</i
+            >
+          </p>
+          <br />
+          <p><b>DOAMNA HÂRCIOGU:</b> Sper că n-a mai adus încă ceva...</p>
+          <br />
+          <p>
+            <i
+              >Ușa se dă de perete, iar în cameră pătrunde domnul Hârciogu. E
+              destul de bondoc și e îmbrăcat cu niște haine care-i vin puțin cam
+              lălâi, iar în mâini își ține servieta și pălăria demodată. Nu
+              poartă barbă, are o chelie destul de pronunțată și e roșu la față,
+              semn că e cuprins de o agitație nervoasă. Înainte să se întoarcă
+              spre el, consoarta lui își dă părul pe spate și arborează un
+              zâmbet fals, dar nu se sinchisește să-i iasă propriu-zis în
+              întâmpinare, mulțumindu-se cu o întrebare prozaică.</i
+            >
+          </p>
+          <br />
+          <p><b>DOAMNA HÂRCIOGU:</b> Ce faci, dragă? Cum ți-a fost la muncă?</p>
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Excelent, excelent, dar nu mai pot de... Ia
+            stai puțin, de ce ai deschis vitrina aceea?
+          </p>
+          <br />
+          <p>
+            <i
+              >Soția îl privește perplexă. În același timp, așază farfuria la
+              loc cât mai discret posibil. Se simte cu musca pe căciulă și vrea
+              să evite o ceartă.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> De ce am deschis vitrina? Cum de ce, dragă?
+            Doar ca să șterg praful!
+          </p>
+          <br />
+          <p>
+            <i
+              >Răspunsul pare să-l mulțumească pe domnul Hârciogu, care se
+              liniștește treptat.</i
+            >
+          </p>
+          <br />
+          <p><b>DOMNUL HÂRCIOGU:</b> A, da? Foarte bine, foarte bine...</p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu își pune pălăria și servieta pe un fotoliu și
+              începe să-și scoată haina.</i
+            >
+          </p>
+          <br />
+          <p><b>DOAMNA HÂRCIOGU:</b> Dar tu ce crezi că faci?!</p>
+          <br />
+          <p>
+            <i
+              >Doamna Hârciogu e scandalizată. Se face roșie la față și dă să
+              pornească spre soțul ei, însă umerașul de pe jos încearcă să se
+              opună pornirii ei belicoase, rezultatul fiind că de sub mormanul
+              de obiecte care se prăbușește cu zgomot țâșnește un încălțător
+              care se agățase cumva de el. Amândoi rămân ca trăzniți. Domnul
+              Hârciogu își revine primul din surpriză și profită de ocazie.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Vai, de când îl căutam! Îți mulțumesc
+            nespus, draga mea!
+          </p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu ia inițiativa nu doar verbal, ci și acționează,
+              căci se mișcă mai iute decât ne-am aștepta de la cineva de talia
+              lui, înșfacă încălțătorul, după care se face nevăzut. Continuă să
+              vorbească de după ușă.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Ăsta e încălțătorul pe care-l folosea și
+            bunicul. Mi se pare că l-a cumpărat prin ’23 de la Hermann, un
+            negustor faimos prin târg, și apoi l-a...
+          </p>
+          <br />
+          <p>
+            <i
+              >În mod evident, doamna Hârciogu nu e impresionată de pedigriul
+              obiectului utilitar.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Da? Mă bucur că ți-a fost bine la muncă.
+            Apropo, sper că de data asta n-ai mai adus nimic de la șeful tău.
+          </p>
+          <br />
+          <p>
+            <i
+              >În timp ce ea vorbește, domnul Hârciogu pătrunde iarăși în
+              încăpere. Auzind-o, face o grimasă și încearcă să dosească un
+              pachețel, dar abia reușește. E clar că vrea să evite la rândul său
+              un scandal domestic, așa că își supralicitează aparenta
+              nevinovăție.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Dar cum să crezi așa ceva, draga mea? Păi se
+            poate?
+          </p>
+          <br />
+          <p>
+            <i
+              >Consoarta îl privește cu ochi critic, apoi se împurpurează din
+              nou la chip. Își îndreaptă degetul arărător de la mâna stângă spre
+              fotoliul pe care se odihnesc servieta și pălăria. Se vede că e
+              furibundă, iar tăcerea ei e cu atât mai amenințătoare. În schimb,
+              domnul Hârciogu pare preocupat de succesul pe care-l are
+              pitindu-și pachețelul, așa încât uită de posibilitatea altor
+              pericole. Într-un târziu, presiunea crește într-atât, încât doamna
+              Hârciogu cedează și pornește asaltul sonic la volum maxim,
+              făcându-l pe soțul ei să-și închidă ochii și să înghită în sec.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> De câte ori să-ți spun ce anume vine unde?
+            Parcă e prima oară când vii în casa asta!
+          </p>
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Țin să-ți aduc aminte că această casă am
+            cumpărat-o eu însumi pe numele meu și că...
+          </p>
+          <br />
+          <p>
+            <i
+              >Îndrăzneala domnului Hârciogu dispare la fel de repede cum și-a
+              făcut apariția, căci soția străbate imediat distanța care-i
+              desparte și continuă să strige.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Te-am întrebat eu pe numele cui e casa? Un
+            singur lucru vreau de la tine: ordine! Mă înțelegi? OR-DI-NE!
+            Spune-mi și mie, de ce simți nevoia să-ți bați joc de toată munca
+            mea așezându-ți servieta și pălăria pe fotoliu?
+          </p>
+          <p><b>DOMNUL HÂRCIOGU:</b> Dar, draga mea, voiam doar să...</p>
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Nu mă mai întrerupe când îți vorbesc! M-am
+            săturat de casa asta și de toate hachițele tale! Uită-te și tu!
+            Intri încălțat și îți trântești servieta pe fotoliu. Probabil că
+            urma să-ți arunci și haina pe spătar. Te pomenești că nici pe mâini
+            nu te-ai spălat până acum! Spune sincer, ai dat mâna cu colegii tăi
+            când ai plecat de la muncă? Ai habar câți germeni ai schimbat cu ei
+            printr-un simplu salut? Dar la copiii noștri nu te gândești? Trebuie
+            să înțelegi odată pentru totdeauna că nu putem să mai continuăm așa.
+            În casa asta trebuie să domnească ordinea, altfel...
+          </p>
+          <br />
+          <p>
+            <i
+              >Între cei doi se lasă o tăcere mormântală. De afară se aud
+              claxoane și alte zgomote aferente traficului de la ore de vârf.
+              Domnul Hârciogu se vede nevoit s-o ajute pe consoartă să-și
+              termine tirada, căci deodată aceasta pare să nu se mai poată
+              desprinde din contemplarea unuia dintre pereți.</i
+            >
+          </p>
+          <br />
+          <p><b>DOMNUL HÂRCIOGU:</b> Altfel...?</p>
+          <p><b>DOAMNA HÂRCIOGU:</b> Altfel...</p>
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Draga mea, te rog să mă ierți dacă te-am
+            necăjit. Uite, chiar acum le iau de pe fotoliu. Țin să-ți comunic că
+            nu am dat mâna cu colegii de muncă. Le-am explicat interdicția ta și
+            au fost cu toții de acord că ar fi mai bine să nu ne mai salutăm, să
+            nu ne mai vizităm și în general să evităm interacțiunile de orice
+            natură dacă există pericole atât de mari.
+          </p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu zâmbește și face întocmai cum a spus. Ridică
+              servieta și pălăria, dar în același timp manevrează cu dibăcie
+              pachețelul, așa încât soția lui să nu-l vadă. În tot acest timp,
+              doamna Hârciogu nu-și dezlipește privirea de la perete.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Lasă asta... Spune-mi mai bine altceva. Pata
+            aia de acolo... O vezi?
+          </p>
+          <p><b>DOMNUL HÂRCIOGU:</b> O văd...</p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu pare contrariat, așa că oferă doar un răspuns
+              vag.</i
+            >
+          </p>
+          <br />
+          <p><b>DOAMNA HÂRCIOGU:</b> O vezi?</p>
+          <p><b>DOMNUL HÂRCIOGU:</b> O văd...?</p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu devine tot mai nesigur ce vrea consoarta să
+              audă.</i
+            >
+          </p>
+          <br />
+          <p><b>DOAMNA HÂRCIOGU:</b> O vezi!</p>
+          <p><b>DOMNUL HÂRCIOGU:</b> O văd!</p>
+          <br />
+          <p>
+            <i
+              >După ce-i răspunde cu aplomb, o privește cu atenție și începe să
+              meargă tiptil până la vitrină. Între timp, Doamna Hârciogu își
+              continuă veghea nemișcată. Odată ce soțul ei ajunge la vitrină, o
+              privește cu mare atenție, oftează, scoate un șervețel și începe să
+              curețe urmele lăsate de soția lui. În același timp, și ea pornește
+              către pata punctiformă de pe perete. A studiat-o îndelung de la
+              distanță, așa încât acum ar vrea s-o vadă și din apropiere. Odată
+              ce face acest lucru, dă din cap nemulțumită și iese din încăpere.
+              Domnul Hârciogu profită de acest moment de respiro ca să-și spună
+              oful.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Auzi tu! Vrea ordine și nici ea nu e în
+            stare s-o păstreze!
+          </p>
+          <br />
+          <p>
+            <i
+              >Domnul Hârciogu se oprește din operațiunea de curățare, după care
+              dispare la rândul lui din încăpere. De după ușă îl auzim cum
+              continuă.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Așa-mi trebuie, dacă nu l-am ascultat pe ăl’
+            bătrân! Doar mi-a zis să iau o femeie ordonată, care știe să aibă
+            grijă de gospodărie. „Cum îi e mintea, așa-i e și sufletul.” Da,
+            mare dreptate avea!
+          </p>
+          <br />
+          <p>
+            <i
+              >Își face din nou apariția cu încălțătorul achiziționat de bunicul
+              lui în 1923, se așază în genunchi lângă grămăjoara de unde
+              obiectul a țâșnit alături de umeraș și îl așază cu venerație la
+              loc, având grijă ca totul să fie ca mai înainte.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOMNUL HÂRCIOGU:</b> Dar ce să-i faci? Ai ei n-au învățat-o să
+            aibă grijă de lucruri așa cum se cuvine și cu asta, basta!
+          </p>
+          <br />
+          <p>
+            <i
+              >Nici nu a terminat bine operațiunea laborioasă, că se și apucă de
+              alta. Scoate mai multe cărți și privește nemulțumit ordinea în
+              care le-a găsit în raft, după care plasează pachețelul pe care-l
+              tot ascundea de soția lui și așază volumele așa cum consideră că
+              este de fapt corect.</i
+            >
+          </p>
+          <br />
+          <p><b>DOMNUL HÂRCIOGU:</b> Iar asta vine... aici!</p>
+          <br />
+          <p>
+            <i
+              >Se vede că este mândru nevoie mare de faptul că a eficientizat
+              perfect spațiul disponibil, căci dă drumul unei exclamații scurte
+              care exprimă un entuziasm copilăresc la care nu ne-am aștepta din
+              partea lui. Imediat își face apariția soția sa, care se duce țintă
+              la pata de pe perete. E înarmată cu un detergent spray și un
+              burete. Domnul Hârciogu iese din încăpere cât mai discret posibil,
+              nevrând să riște reluarea confilctului. În ciuda tuturor
+              eforturilor ei, doamna Hârciogu nu reușește să elimine pata
+              încăpățânată.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Of, sunt sigură că săptămâna trecută nu era
+            aici!
+          </p>
+          <br />
+          <p>
+            <i
+              >E de-a dreptul epuizată, așa că se duce la fotoliu și mai mult se
+              trântește decât se așază. Nu stă nici două clipe, că sare ca
+              arsă.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Mototolul ăsta iar și-a spus servieta pe
+            fotoliu! Nimic nu știe să facă dacă nu-l împing eu de la spate! Avea
+            dreptate mama când zicea să-mi caut un bărbat care e atent la
+            detalii. „Cum rânduiește lucrurile, așa-i rânduit și el.” Da, chiar
+            așa!
+          </p>
+          <br />
+          <p>
+            <i
+              >Doamna Hârciogu scoate alt spray dintr-un buzunar al halatului și
+              începe să dezinfecteze fotoliul. Într-un târziu îl privește
+              mulțumită de rezultat, după care se întoarce la vitrină, o
+              deschide cu precauție și scoate iarăși farfuria.</i
+            >
+          </p>
+          <br />
+          <p>
+            <b>DOAMNA HÂRCIOGU:</b> Frumoasa lu’ mama! Nu s-a prea priceput
+            mama-soacră să-și crească fiul, dar la veselă avea gusturi a-ntâia!
+          </p>
+          <br />
+          <p style="text-align: center"><b>CORTINA</b></p>
+          <p></p
+        ></main_text>
+      </div>
     </div>
 
     <script>
-        function toggleMenu() {
-            var menu = document.querySelector(".menu-links");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
+      function toggleMenu() {
+        var menu = document.querySelector(".menu-links");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
         }
+      }
     </script>
-        <footer class="site-footer">
-            <a href="#" class="back-to-top">De la început ↑</a>
-            <p>© Mihnea Arion, 2025</p>
-          </footer>
-</body>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const progressBar = document.getElementById("reading-progress");
+        const scrollTop = window.scrollY;
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + "%";
+      });
+    </script>
+
+    <footer class="site-footer">
+      <a href="#" class="back-to-top">De la început ↑</a>
+      <p>© Mihnea Arion, 2025</p>
+    </footer>
+  </body>
 </html>
