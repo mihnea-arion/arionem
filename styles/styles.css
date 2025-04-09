@@ -23,10 +23,16 @@ h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Playfair Display', sans-serif; */
     font-family: 'Work Sans', sans-serif;
     color: #FAF6F0;
+    text-shadow: 0 0 2px #00000031;
 }
 
 
-h1 { font-size: 50px; } 
+h1 {
+    font-size: 50px;
+    color: #f0b27a;
+    text-shadow: 0 0 3px #f17929;
+ } 
+
 h2 { font-size: 30px; }
 h3 { font-size: 22px; }
 h4 { font-size: 20px; }
@@ -70,6 +76,11 @@ h6 { font-size: 16px; }
     margin-bottom: 25px;
     justify-content: space-between;
 }
+
+/* .owner-container:hover{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
+} */
 
 .main-buttons-container{
     display: flex;
@@ -164,6 +175,7 @@ h6 { font-size: 16px; }
 
 p{
     font-family: 'Spectral', serif;
+    text-shadow: 0 0 1px #f17929d8;
     margin-top: 0;
     line-height: 1.8em;
     text-align: justify;
@@ -193,7 +205,7 @@ p{
 }
 
 .owner-title{
-    color: #FAF6F0;
+    color: #f0b27a;
     background-color: transparent;
     text-decoration: none;
 
@@ -204,6 +216,16 @@ p{
     margin-top: 10px;
     text-align: left;
     justify-content: space-between;
+}
+
+.owner-title:hover{
+    border-radius: 15px;
+    /* box-shadow: 0 4px 10px rgba(156, 154, 149, 0.993); */
+    /* margin-right: 15px; */
+
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
+    /* background-color: #f0ececd5;
+    color: #FAF6F0; */
 }
 
 .main-text{
@@ -313,8 +335,8 @@ p{
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.25);
     color: #FAF6F0;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(131, 124, 124, 0.452);
+    border-radius: 35px;
+    /* box-shadow: 0 4px 10px rgba(131, 124, 124, 0.452); */
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
@@ -325,8 +347,10 @@ p{
   }
 
   .button:hover {
-    background-color: rgba(255, 255, 255, 0.342);
-    box-shadow: 0 4px 10px rgba(129, 122, 122, 0.726);
+    /* background-color: rgba(255, 255, 255, 0.342); */
+    /* box-shadow: 0 4px 10px rgba(129, 122, 122, 0.726); */
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
+    background-color: #f0ececd5;
     color: #181b1d;
   }
 
@@ -387,6 +411,7 @@ p{
     text-align: right;
     margin-top: -30px;
     margin-bottom: 100px;
+    text-shadow: 0 0 1px #f17929d8;
 }
 
 .asterisk{
@@ -538,6 +563,22 @@ p{
     z-index: 1; */
 }
 
+.fragmente-gallery-item h3{
+    position: static;
+    display: block;
+    background-color: transparent; 
+    color:#242321;
+    margin: 8px 0 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.fragmente-gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
+}
+
 
 .card-content {
     display: flex;
@@ -548,7 +589,7 @@ p{
 
 .title-button{
     /* display: inline-block; */
-    min-height: 3.4em; /* Enough for 2 lines at 1.4 line-height */
+    min-height: 4em; /* Enough for 2 lines at 1.4 line-height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -558,7 +599,7 @@ p{
 
     background-color: #f0b27a;
     color: #181b1d;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid #c59054;
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 5px;
@@ -588,6 +629,7 @@ p{
   
   .read-more-button:hover {
     background-color: #f0ececd5;
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
     color: #181b1d;
   }
   
@@ -600,12 +642,6 @@ p{
     overflow: visible;     /* Hides excess content */
     border-radius: 10px;   /* Applies to the container for neatness */
 }
-
-.povestiri-gallery-item img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    transition: transform 0.3s ease;
-}
-
 
 .povestiri-gallery-item .description {
     position: static;
@@ -638,6 +674,12 @@ p{
     object-fit: contain;    /* Crops and fits images perfectly */
  /*   position: relative;
     z-index: 1; */
+}
+
+.povestiri-gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(219, 152, 8, 0.726);
 }
 
 .povestiri-list{
