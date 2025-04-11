@@ -261,7 +261,6 @@ hr{
 
 .gallery-item img {
     width: 100%;
-
     height: auto;
     object-fit: cover;
     display: block;
@@ -690,6 +689,7 @@ hr{
     height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 20px;
 
 /*     height: 100%;
     object-fit: contain;    /* Crops and fits images perfectly */
