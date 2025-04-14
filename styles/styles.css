@@ -492,6 +492,8 @@ hr{
 .traduceri-gallery-item img{
     margin-left: 75px;
     border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 0;
     display: block;
     width: 100%;
@@ -508,6 +510,7 @@ hr{
 
 .traduceri-book-info {
     margin-right: 75px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -565,10 +568,11 @@ hr{
     object-fit: block;
     display: block;
 
-    border-radius: 8px;
-    margin: 0;
+
+    border-radius: 15px;
+    margin: 15px;
     padding: 0;
-    margin-left: 100px;
+    margin-left: 75px;
 
 /*     height: 100%;
     object-fit: contain;    /* Crops and fits images perfectly */
@@ -583,7 +587,8 @@ hr{
 }
 
 .fragmente-book-info {
-    margin-right: 100px;
+    margin-right: 75px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -625,7 +630,7 @@ hr{
     border-radius: 5px;
     font-size: 0.9em;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+    margin-top: 15px;
  
 }
 
@@ -671,6 +676,10 @@ hr{
     margin: 8px 0 0; /* Add spacing between the image and title */
     padding: 0; /* Reset padding if needed */
     z-index: 2;
+}
+
+.povestiri-gallery-item .read-more-button{
+    margin-top: 0px;
 }
 
 .povestiri-gallery-item h3{
@@ -901,15 +910,13 @@ hr{
     text-align: center;
     box-sizing: border-box;
   }
-  
-
-
 
   .read-more-button {
     display: block;
     max-width: 100%;
-    width: 90%; /* or 100% if you want edge-to-edge */
+    width: 100%; /* or 100% if you want edge-to-edge */
     margin: 0px auto 0; /* top margin + center horizontally */
+    box-sizing: border-box;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 8px 16px;
