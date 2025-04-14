@@ -928,6 +928,10 @@ hr{
     width: 95%;
 }
 
+.author{
+    margin-top: 0px;
+}
+
   p{
     font-size: 20px;
     /* font-size: 20px; */
